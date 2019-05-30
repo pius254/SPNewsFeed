@@ -1,0 +1,43 @@
+.new {
+    margin-top: 2%;
+}
+/* Section's Ribbons */
+.top_ribbon_header {
+    padding-left: 5px;
+    background: #0C59CF;
+    padding: 3px 5px;;
+    color: #FFFFFF;
+}
+
+.top_ribbon_header h4 {
+	color: #FFFFFF;
+}
+
+.top_ribbon_header.middle_content {
+    background: #E50A0D;
+}
+
+/* Section Styles */
+.individual_Section {
+    background: #FFFFFF;
+}
+
+.individual_Section a {
+	text-decoration:none;
+	color: #455a64;
+}
+
+.individual_Section .top_ribbon_header h4 a {
+	color: #FFFFFF;
+}
+
+/* Announcements Section Styles */
+.media .announce_item_separator {
+    margin: 10px 10px;
+    border-bottom: 1px solid #E50A0D;
+}
+
+.media .announce_item_separatorlast-child {
+    margin: 12px 10px;
+}
+
