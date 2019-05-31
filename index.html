@@ -22,8 +22,10 @@
                             <div class="media section_content">
                                 <div id="news_and_updates_items">
                                     <!-- .announce_item_separator items -->
-
-                                    {{ news }}
+                                    <!-- loop over the results to dispay only the titles -->
+                                    <div v-for="titles in news">
+                                        {{ titles.Title }}
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -9,7 +9,11 @@ var app = new Vue({
     },
     mounted () {
         axios
-          .get(_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('NewsAndUpdates')/items?$Select=Title,Author/Title,EncodedAbsUrl,Description,ID,Created,Category&$expand=Author/Title&$top=10&$orderby=ID%20desc")
-          .then(response => (this.news = response))
+          .get(_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('NewsAndUpdates')/items?$Select=Title,Author/Title,EncodedAbsUrl,Description,ID,Created,Category&$expand=Author/Title&$top=10&$orderby=ID%20desc",{
+            headers: {
+                "Accept": "application/json;odata=verbose"
+            }      
+          })
+          .then(response => (this.news = response.data.d.results))
     }    
 });
