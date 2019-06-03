@@ -19,12 +19,23 @@
                                 <h4><i class="fa fa-bullhorn fa-spin"></i>&nbsp; News and Updates <span class="badge badge-success" style="background-color: red;">Hot <i class="fab fa-hotjar"></i></span></h4>
                             </div>
                 
-                            <div class="media section_content">
+                            <div class="section_content">
                                 <div id="news_and_updates_items">
                                     <!-- .announce_item_separator items -->
                                     <!-- loop over the results to dispay only the titles -->
                                     <div v-for="titles in news">
-                                        {{ titles.Title }}
+
+                                        <div class="announce_item_separator">
+                                            <div class="media">
+                                                <a :href="'/sites/devintra/SitePages/GlobalNews.aspx'+'#'+titles.ID"><img class="mr-3" :src="titles.EncodedAbsUrl" alt="..."></a>
+                                            
+                                                <div class="media-body">
+                                                    <h4 class="mt-0"><a :href="'/sites/devintra/SitePages/GlobalNews.aspx'+'#'+titles.ID">{{ titles.Title }}</a></h4>
+                                                    <span>{{ titles.Description }}</span><br /><small>{{ titles.Author.Title }}</small>
+                                                </div>
+                                            </div>
+                                        </div><p class="section_separator"></p>
+                                       
                                     </div>
                                 </div>
                             </div>

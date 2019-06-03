@@ -32,12 +32,12 @@
 }
 
 /* Announcements Section Styles */
-.media .announce_item_separator {
+.section_content .announce_item_separator {
     margin: 10px 10px;
     border-bottom: 1px solid #E50A0D;
 }
 
-.media .announce_item_separatorlast-child {
+.section_content .announce_item_separatorlast-child {
     margin: 12px 10px;
 }
 
